@@ -1,0 +1,117 @@
+// VARIABLES
+
+$black: #000000;
+$white: #FFFFFF;
+
+// Primary colours theme
+$tomato: #fa612c;
+$turmeric: #fbc112;
+$turquoise: #7fccd4;
+$papaya: #ff8d1d;
+
+// Girly bubblegum theme
+$beetroot: #d8007e;
+$fuschia: #fd129b;
+$deepblue: #160065;
+$charcoal: #3e3e3e;
+$bubblegum: #ff71cb;
+
+// Lavender Sage Island theme
+$lavender: #9681ff;
+$lavenderMilk: #c2bce9;
+$pomodoro: #f95022;
+$lightSage: #a9e5be;
+$seafoamIsland: #4cc8a9;
+$ginger: #ff8916;
+$inkyPurple: #23007c;
+
+$beetroot2: #b3065f;
+$warmpapaya: #fa5838;
+$dustypink: #f3ccbd;
+$coral: #fa7878;
+$jungle: #18c2b4;
+
+
+// h1, h1 a
+// {
+// 	color: rgb(247, 92, 28);
+// }
+body 
+{
+	// color: rgba(0, 0, 0, 0.85);
+	color: $charcoal;
+}
+
+a
+{
+	color: $coral;
+	text-decoration: underline;
+	&:hover, &:active
+	{
+	  color:  $dustypink;
+	}
+
+	transition: color 0.4s ease;
+}
+
+h1,
+h1 a
+{
+	color: $charcoal;
+}
+
+h1 a
+{
+	color: $charcoal;
+	&:hover, &:active
+	{
+	  color:  $coral;
+	}
+}
+
+
+h2
+{
+	color: $charcoal;
+}
+
+#mc_embed_signup h2
+{
+	color: $charcoal;
+}
+
+
+.nav-bar
+{
+	// background-color: rgba($white, 0.8);
+	background-color: rgba($white, 0);
+	transition: background-color 0.5s;
+	
+	nav ul li
+	{
+		color: $charcoal;
+	}
+
+	a,
+	.hamburger
+	{
+		color: $charcoal;
+
+		&:hover, &:active
+		{
+		  // color: $blue1;
+		}
+	}
+}
+
+h3.comment-call-to-action
+{
+	color: $coral;
+}
+
+input[type="submit"]
+{
+	background-color: $coral;
+}
+
+

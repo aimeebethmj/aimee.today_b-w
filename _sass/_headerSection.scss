@@ -1,0 +1,44 @@
+
+#todayMessage
+{
+    margin-top: 4rem;
+
+    img 
+    {
+	    z-index: 3;
+    }
+}
+
+
+#welcomeSection
+{
+
+	#welcomeImage
+	{
+		position: relative;
+
+		img
+		{
+			margin-top: -16rem;
+		}
+
+		p
+		{
+			position: absolute;
+			top: 4%;
+			top: 12%;
+		    text-align: center;
+		    left: 0;
+		    right: 0;
+		    font-size: 3rem;
+
+		    span
+		    {
+		    	display: block;
+		    }
+		}
+	}
+}
+
+
+

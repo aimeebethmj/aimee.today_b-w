@@ -1,0 +1,263 @@
+@media (max-width: 1200px)
+{
+	.container
+	{
+		width: 100%;
+	}
+
+	.nav-bar
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.slick-slide img
+	{
+		width: 100%;
+	}
+
+	.text-content img
+	{
+		// preventing WP from resizing images arbitrarily
+		max-width: 100% !important;
+		width: auto !important;
+		height: auto !important;
+	}
+}
+
+// @media (max-width: 860px)
+@media (max-width: 800px)
+{
+	#welcomeSection	#welcomeImage
+	{
+		p
+		{
+			// position: static;
+		 //    text-align: left;
+
+			span
+		    {
+		    	display: inline;
+		    }
+		}
+
+		img
+		{
+			margin-top: -10rem;
+			margin-left: -3rem;
+			margin-right: -3rem;
+			max-width: calc(100% + 6rem);
+		}
+	}
+
+	h1
+	{
+		padding: 0 10rem;
+	}
+
+	h1
+	{
+		font-size: 5rem;
+	}
+
+	h2
+	{
+		font-size: 3.5rem;
+		margin: 8rem 0 4rem;
+	}
+
+	h3
+	{
+		font-size: 3rem;
+	}
+
+	.entry
+	{
+	  	padding: 0rem 10rem 4rem;
+	}
+
+	.nav-bar
+	{
+		nav ul
+		{
+			display: none;
+			float: none;
+			margin-top: 3.5rem;
+			line-height: inherit;
+			margin-bottom: 1rem;
+
+			li
+			{
+				display: block;
+				line-height: inherit;
+
+				a
+				{
+					display: block;
+					text-align: right;
+					padding-left: 0;
+					font-size: 3rem;
+				}
+			}
+		}
+
+		.hamburger
+		{
+			display: block;
+		}
+	}
+
+	.text-content
+	{
+		// margin-left: 15%;
+		// margin-right: 15%;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.nav-bar .container .row
+	{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.marginBtmLarge
+	{
+	  margin-bottom: 3rem;
+	}
+
+	.mainBlogFeed article .featuredImage img, 
+	.mainBlogFeed article img.u-max-full-width, 
+	.mainBlogFeed article img.profile-image 
+	{
+    max-width: 100%;
+	}
+
+
+	#logo 
+	{
+	    max-width: 25%;
+	    top: 1rem;
+	    position: absolute;
+	}
+
+
+
+	p, li, ul 
+	{
+	    font-size: 2.4rem;
+	}
+
+	.footer-content
+	{
+	  padding-right: 2rem;
+	  padding-left: 2rem;
+	}
+
+}
+
+// @media (max-width: 549px)
+@media (max-width: 600px)
+{
+	body 
+	{
+		// background-image: url(../images/AimeeToday_Header_7_5MOBILE_bluepaint.jpg);
+		// padding-top: 63vw;
+	}
+
+	.main-heading
+	{
+		padding: 9rem 0 2rem;
+	}
+
+	h1, h2
+	{
+		padding: 0;
+	}
+
+	h1
+	{
+		font-size: 4rem;
+	}
+	
+	h2
+	{
+		font-size: 3rem;
+	}
+
+	.entry
+	{
+	  // padding: 6rem 10rem;
+	  padding: 0;
+	}
+
+	.hide-for-mobile
+	{
+		display: none;
+	}
+
+	ul.gallery li
+	{
+		width: 100%;
+		padding-bottom: 66.66%;
+	}
+
+	#welcomeSection	#welcomeImage
+	{
+		p 
+		{
+			font-size: 3vw;
+		}
+
+		img
+		{
+			// margin-top: -6rem;
+		}
+	}
+
+
+	.entry ol li:before 
+	{
+		font-size: 800%;
+    	opacity: 0.2;
+	    /* right: 0; */
+	    line-height: 1;
+    	position: static;
+	}
+
+	.mainBlogFeed  
+	{
+		article
+		{
+			img.profile-image
+			{
+				max-width: 100%;
+			}
+
+		}
+		
+	}
+
+	.mainBlogFeed article .featuredImage img, 
+	.mainBlogFeed article img.u-max-full-width, 
+	#mainBlogFeed article img.profile-image 
+	{
+    	max-width: 100%;
+	}
+
+	.blogEnd img 
+	{
+    	max-width: 70%;
+	}
+
+
+
+}
+
+@media (max-width: 500px)
+{
+	#logo 
+	{
+    	max-width: 28%;
+	}
+}

@@ -1,0 +1,39 @@
+.relatedposts 
+{
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.relatedposts h3 
+{
+	font-size: 20px; 
+	margin: 0 0 2rem 0; 
+}
+
+.relatedthumb 
+{
+	margin: 0 1px 0 1px; 
+	float: left; 
+}
+
+.relatedthumb img 
+{
+	margin: 0 0 3px 0; 
+	padding: 0;
+}
+
+.relatedthumb a 
+{
+	color :#333; 
+	text-decoration: none; 
+	display:block; 
+	padding: 4px; 
+	max-width: 200px;
+	transition: transform 0.2s ease;
+}
+
+.relatedthumb a:hover 
+{
+	transform: translateY(-10px);
+}

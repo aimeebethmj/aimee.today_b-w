@@ -1,0 +1,65 @@
+.nav-bar
+{
+  // position: fixed;
+  // top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+
+  box-sizing: border-box;
+  
+  
+
+  .container
+  {
+    .row
+    {
+      margin-right: 10%;
+      margin-left: 10%;
+
+      #home-link
+      {
+        transition: 0.5s;
+        opacity: 0;
+      }
+    }
+  }
+
+  a
+  {
+    text-decoration: none;
+  }
+
+  nav
+  {
+    ul
+    {
+      list-style: none;
+      margin-bottom: 0;
+      line-height: 1;
+
+      li
+      {
+        margin-bottom: 0;
+        display: inline-block;
+        line-height: 1;
+
+        a
+        {
+          // padding: 2rem 1rem;
+          padding-left: 2rem;
+          // font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+#logo
+{
+  max-width: 20%;
+  top: 1rem;
+  position: absolute;
+}

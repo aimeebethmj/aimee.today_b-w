@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+// Default Variables
+
+$slick-font-path: "../bower_components/slick-carousel/slick/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: white !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "←" !default;
+$slick-next-character: "→" !default;
+$slick-dot-character: "•" !default;
+$slick-dot-size: 16px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Icons */
+@if $slick-font-family == "slick"
+{
+  @font-face
+  {
+    font-family: "slick";
+    src: slick-font-url("slick.eot");
+    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next
+{
+  position: absolute;
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  // line-height: 0px;
+  // font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -2rem;
+  padding: 0;
+  border: none;
+  outline: none;
+  &:hover, &:focus
+  {
+    outline: none;
+    background: transparent;
+    color: transparent;
+    &:before
+    {
+      opacity: $slick-opacity-on-hover;
+      color: $blue1;
+    }
+  }
+  &.slick-disabled:before
+  {
+    opacity: $slick-opacity-not-active;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+  // font-family: $slick-font-family;
+  // font-size: 20px;
+  line-height: 1;
+  color: $blue2;
+  opacity: $slick-opacity-default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+  &:before
+  {
+    position: relative;
+    left: -2px;
+    float: left;
+    content: $slick-prev-character;
+    [dir="rtl"] &
+    {
+      content: $slick-next-character;
+    }
+  }
+}
+
+.slick-next
+{
+  &:before
+  {
+    position: relative;
+    right: -2px;
+    float: right;
+    content: $slick-next-character;
+    [dir="rtl"] &
+    {
+      content: $slick-prev-character;
+    }
+  }
+}
+
+.slider,
+.multiple-slider
+{
+  .slick-prev,
+  .slick-next
+  {
+    z-index: 1;
+  }
+}
+
+.slider
+{
+  .slick-prev
+  {
+    left: 4rem;
+  }
+  .slick-next
+  {
+    right: 4rem;
+  }
+}
+
+.multiple-slider
+{
+  .slick-prev, .slick-next
+  {
+    top: -6.3rem;
+  }
+  .slick-prev
+  {
+    // left: calc(4rem - 12.5%);
+    left: 0;
+  }
+  .slick-next
+  {
+    // right: calc(4rem - 12.5%);
+    right: 0;
+  }
+}
+
+.multiple-slider
+{
+  .column
+  {
+    transition: .4s;
+    margin-left: 0;
+
+    a
+    {
+      padding: 4rem 6rem;
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+.slider
+{
+	a
+  {
+    .info
+    {
+      background: rgba($white, .7);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-decoration: none;
+      opacity: 0;
+      transition: .4s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem;
+
+      h2
+      {
+        text-align: center;
+      }
+    }
+    
+    &:hover
+    {
+      .info
+      {
+        opacity: 1;
+      }
+    }
+  }
+}

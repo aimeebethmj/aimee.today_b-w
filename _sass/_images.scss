@@ -1,0 +1,54 @@
+body 
+{
+	// background-image: url(../images/AimeeToday_Header_8_painteblue.jpg);
+ //    background-size: contain;
+ //    background-repeat: no-repeat;
+ //    padding-top: 31vw;
+}
+
+.mainBlogFeed  
+{
+	article
+	{
+		img.profile-image
+		{
+			max-width: 75%;
+		}
+		.featuredImage img,
+		// img.u-max-full-width,
+		img.profile-image
+		{
+			margin: 0 auto 4rem;
+    		display: block;
+    		max-width: 80%;
+		}
+	}	
+}
+
+.entry img,
+img.u-max-full-width
+{
+	max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+footer
+{
+	// background-image: url(../images/AimeeToday_FREE_DREAMS_PROGRESS_PRINTABLE.jpg);
+	// background-size: contain;
+ //    background-repeat: no-repeat;
+ //    background-position: bottom;
+ //    bottom: 0;
+ //    margin: 0 -2rem;
+}
+/* #headerImage img
+{
+	margin-top: 3rem;
+    margin: -5rem -2rem;
+    width: calc(100% + 4rem);
+    max-width: inherit;
+} */

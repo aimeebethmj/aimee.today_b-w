@@ -1,0 +1,46 @@
+.blog .boxed-content a
+{
+	text-decoration: none;
+	color: $black;
+}
+
+.fieldnotes
+{
+  ul
+  {
+    list-style-type: none;
+
+    li
+    {
+      margin-bottom: 7rem;
+
+      &:nth-child(odd)
+      {
+        clear: both;
+        margin-left: 0;
+        // padding-right: 10px;
+      }
+
+      &:nth-child(even)
+      {
+        // padding-left: 10px;
+      }
+
+      a
+      {
+        text-decoration: none;
+      }
+
+      h3
+      {
+        margin-top: 15px;
+      }
+
+      img
+      {
+        max-width: 100%;
+        vertical-align: top;
+      }
+    }
+  }
+}

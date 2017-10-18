@@ -1,0 +1,174 @@
+body
+{
+  // padding-top: 7.5rem;
+  padding: 5rem 2rem 0;
+}
+
+.container
+{
+  padding: 0;
+  // max-width: 120rem;
+  max-width: 100rem; 
+}
+
+header.container
+{
+  // max-width: 860px; 
+  max-width: 800px; 
+  margin-top: 4rem;
+}
+
+.entry
+{
+  padding: 0 18rem 4rem;
+}
+
+article .sumome-article
+{
+  padding-left: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.low-centered
+{
+  position: absolute;
+  top: 70%;
+  /* left: 50%;
+  -webkit-transform: translate(-75%,-50%);
+  -moz-transform: translate(-75%,-50%);
+  -ms-transform: translate(-75%,-50%);
+  -o-transform: translate(-75%,-50%);
+  transform: translate(-75%,-50%); */
+  width: 100%;
+  text-align: center;
+}
+
+.main-heading
+{
+  text-align: center;
+  padding: 18rem 0 2rem;
+}
+
+.sub-heading
+{
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.sub-sub-heading
+{
+  text-align: center;
+}
+
+// ---------
+
+.container.slider
+{
+  position: relative;
+}
+
+.boxed-content
+{
+  // margin-left: 10%;
+  // margin-right: 10%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.text-content
+{
+  margin-left: 25%;
+  margin-right: 25%;
+
+  // .fieldnotes
+  // {
+  //   margin-bottom: 5rem;
+  // }
+}
+
+// .contact-links
+// {
+//   text-align: center;
+//   margin-top: 3rem;
+
+//   p
+//   {
+//     padding-right: 2rem;
+//     padding-left: 2rem;
+//   }
+
+//   a .fa-twitter
+//   {
+//     padding-left: 2rem;
+//   }
+// }
+
+// .footerEmail
+// {
+//   a
+//   {
+//     padding-left: 2rem;
+//   }
+
+// }
+
+.h-centred, .v-centred
+{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.v-centred 
+{
+    align-items: center;
+}
+
+.h-centred 
+{
+    justify-content: center;
+    text-align: center;
+}
+
+img
+{
+  max-width: 100%;  
+}
+
+.marginBtmLarge
+{
+  margin-bottom: 6rem;
+}
+
+// .marginTopSmall
+// {
+//   margin-top: 1rem;
+// }
+
+.footer-content
+{
+  // padding-bottom: 32vw; spacing to go with the image and form
+  padding-bottom: 10vw;
+}
