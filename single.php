@@ -42,7 +42,7 @@ Template Post Type: post
 						<h1><?php echo get_the_title(); ?></h1>
 
 						<div class="entry">
-								<!-- <img class="u-max-full-width" src="<?php echo $imageURL; ?>">  -->
+								 <img class="u-max-full-width" src="<?php echo $imageURL; ?>">
 							 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 									<div class="post-thumbnail">
 										<a href="<?php the_permalink(); ?>">
