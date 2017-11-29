@@ -28,9 +28,7 @@
 	<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
-
-	    
-			
+	
 		<div class="container mainBlogFeed">
 			<div class="row">
 				<!-- <div class="twelve columns h-centred v-centred"> -->
@@ -40,14 +38,17 @@
 
 						<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
-						
-
 						<div class="entry">
 							<?php 
-					      		$imageURL = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+								$imageID = get_post_thumbnail_id($post->ID);
+								$imageURL = wp_get_attachment_url($imageID);
+								$imageAlt = get_post_meta($imageID, '_wp_attachment_image_alt', true);
+								// $postMeta = get_post_meta($imageID);
 					    	?>
+					    	
+					    	<?php // echo '<pre>'; print_r($postMeta); echo '</pre>'; ?>
 
-						 <img class="u-max-full-width" src="<?php echo $imageURL; ?>"> 
+						 	<img class="u-max-full-width" src="<?php echo $imageURL; ?>" alt="<?php echo $imageAlt; ?>"> 
 							<?php the_content(); ?>
 						</div>
 						<div class="blogEnd">

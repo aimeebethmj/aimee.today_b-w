@@ -20,7 +20,9 @@ Template Post Type: post
 
     <!-- MAIN IMAGE -->
     <?php 
-      $imageURL = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+    	$imageID = get_post_thumbnail_id($post->ID);
+		$imageURL = wp_get_attachment_url($imageID);
+		$imageAlt = get_post_meta($imageID, '_wp_attachment_image_alt', true);
     ?>
 
       <!-- <div class="container">
@@ -42,19 +44,18 @@ Template Post Type: post
 						<h1><?php echo get_the_title(); ?></h1>
 
 						<div class="entry">
-								 <img class="u-max-full-width" src="<?php echo $imageURL; ?>">
-							 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
-									<div class="post-thumbnail">
-										<a href="<?php the_permalink(); ?>">
-											<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
-										</a>
-									</div><!-- .post-thumbnail -->
-								<?php endif; ?>
-
+							<img class="u-max-full-width" src="<?php echo $imageURL; ?>" alt="<?php echo $imageAlt; ?>">
+							<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
+								<div class="post-thumbnail">
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+									</a>
+								</div><!-- .post-thumbnail -->
+							<?php endif; ?>
 							<?php the_content(); ?>
 						</div>
 						<div class="entry">
-							<div class="relatedposts">
+							<!-- <div class="relatedposts">
 								<h3>You might also like...</h3>
 								<?php
 								  $orig_post = $post;
@@ -88,7 +89,7 @@ Template Post Type: post
 								  $post = $orig_post;
 								  wp_reset_query();
 								  ?>
-							</div>
+							</div> -->
 
 						
 							<?php
