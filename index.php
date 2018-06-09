@@ -14,41 +14,41 @@
 
 
 <!-- 		<div class="container" id="welcomeSection">
-	      <div class="row" id="welcomeImage">  
+	      <div class="row" id="welcomeImage">
 	        <div class="twelve columns">
 	          <img alt="Drawing of Aimee's studio and photo of Aimee smiling, super happy that you're here!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayheaderImage_heart.png">
 	          <p>Pep-talks to be brave and<br>take your <b>very next step</b></p>
-	        </div> 
+	        </div>
 	      </div>
 	    </div> -->
 
 
-	
+
 
 	<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
-	
+
 		<div class="container mainBlogFeed">
 			<div class="row">
 				<!-- <div class="twelve columns h-centred v-centred"> -->
 				<div class="twelve columns">
-					
+
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 						<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
 						<div class="entry">
-							<?php 
+							<?php
 								$imageID = get_post_thumbnail_id($post->ID);
 								$imageURL = wp_get_attachment_url($imageID);
 								$imageAlt = get_post_meta($imageID, '_wp_attachment_image_alt', true);
 								// $postMeta = get_post_meta($imageID);
 					    	?>
-					    	
+
 					    	<?php // echo '<pre>'; print_r($postMeta); echo '</pre>'; ?>
 
-						 	<img class="u-max-full-width" src="<?php echo $imageURL; ?>" alt="<?php echo $imageAlt; ?>"> 
+						 	<img class="u-max-full-width" src="<?php echo $imageURL; ?>" alt="<?php echo $imageAlt; ?>">
 							<?php the_content(); ?>
 						</div>
 						<div class="blogEnd">
@@ -61,6 +61,12 @@
 		</div>
 
 		<?php endwhile; ?>
+
+		<!-- pagination -->
+		<section class="pagination container h-centred v-centred">
+			<div class="previous"><?php next_posts_link('<<  Older '); ?></div>
+	 		<div class="next"><?php previous_posts_link(' Newer  >>'); ?></div>
+		</section>
 
 	<?php else : ?>
 
