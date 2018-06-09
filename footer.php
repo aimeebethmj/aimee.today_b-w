@@ -3,17 +3,17 @@
 	      	<div class="twelve columns h-centred">
 	      		<h3 class="">
 	      			<a href="<?php echo site_url(); ?>/about">
-		            <span>Hello lovely!</span> 
+		            <span>Hello lovely!</span>
 		            <span>I’m Aimee. I’m on a journey to</span>
-		            <span>share my gifts,</span> 
-		            <span>be <i>braver</i>, more <i>creative</i> and</span> 
+		            <span>share my gifts,</span>
+		            <span>be <i>braver</i>, more <i>creative</i> and</span>
 		            <span>enjoy every moment...</span>
 		            <span>Oh hey, you too? :)</span>
 		            </a>
 	          	</h3>
 	      	</div>
 	    </div> -->
-	  <div class="footer-content">  
+	  <div class="footer-content">
 		  <!-- <div class="row" id="todayMessage">
 	          <div class="twelve columns h-centred v-centred">
 	            <a href="<?php echo site_url(); ?>"><img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting_sea.svg"></a>
@@ -53,31 +53,31 @@
 	    <!-- <div class="row">
 	    	<img src="<?php theActiveThemeDirectory(); ?>images/AimeeToday_FREE_DREAMS_PROGRESS_PRINTABLE.jpg">
 	    </div> -->
-	    <small class="h-centred v-centred">&copy; Copyright &nbsp; <span id="year">1989</span>, Aimee Johanan</small>
+	    <small class="h-centred v-centred copyright">&copy; Copyright &nbsp; <span id="year">1989</span> Aimee Johanan</small>
 	</footer>
 
 	<?php wp_footer(); ?>
 
 	<script src="<?php theActiveThemeDirectory(); ?>js/jquery-3.2.0.slim.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() 
+		$(document).ready(function()
 		{
-			if (jQuery) 
-			{  
-	          	// jQuery is loaded  
+			if (jQuery)
+			{
+	          	// jQuery is loaded
 	          	// console.log("jQuery yas")
-	        
+
 				$(window).scroll( function()
 				{
 					// console.log('scrolling')
 					var scrollTop = $(this).scrollTop()
 					var opacity = '1'
 					var translucent = '0.8'
-					if (scrollTop < 20) opacity = '0' 
+					if (scrollTop < 20) opacity = '0'
 					$('#home-link').css({'opacity': opacity})
 				})
-	        } 
-	        else 
+	        }
+	        else
 	        {
 	          	// jQuery is not loaded
 	          	console.log("jQuery nope")
