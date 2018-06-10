@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   "use strict";
- 
+
   grunt.initConfig(
   {
     sass: {
@@ -11,6 +11,7 @@ module.exports = function(grunt) {
         },
         files: {
           '../css/main.css': '../_sass/sassy.scss'
+          // sass ../_sass/sassy.scss ../css/main.css 
         }
       }
     },
@@ -40,12 +41,12 @@ module.exports = function(grunt) {
       }
     }
   });
- 
-  // Load tasks 
+
+  // Load tasks
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
- 
-  // Register tasks 
+
+  // Register tasks
   grunt.registerTask('default', ['watch']);
 };
