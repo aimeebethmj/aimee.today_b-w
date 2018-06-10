@@ -63,10 +63,10 @@
 		<?php endwhile; ?>
 
 		<!-- pagination -->
-		<section class="pagination container h-centred v-centred">
-			<div class="previous"><?php next_posts_link('<<  Older '); ?></div>
-	 		<div class="next"><?php previous_posts_link(' Newer  >>'); ?></div>
-		</section>
+		<p class="pagination container h-centred v-centred">
+			<b class="previous"><?php next_posts_link('Older'); ?></b>
+	 		<b class="next"><?php previous_posts_link(' Newer'); ?></b>
+		</p>
 
 	<?php else : ?>
 

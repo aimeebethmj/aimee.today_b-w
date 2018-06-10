@@ -9,8 +9,6 @@
   padding-bottom: 2.5rem;
 
   box-sizing: border-box;
-  
-  
 
   .container
   {
@@ -62,4 +60,30 @@
   max-width: 20%;
   top: 1rem;
   position: absolute;
+}
+
+.pagination
+{
+  .previous, .next
+  {
+    padding: 0 2.2rem;
+
+    a:before, a:after
+    {
+      font-size: 153%;
+      font-weight: normal;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .previous a:before
+  {
+    content: "☚";
+    margin-right: 1rem;
+  }
+  .next a:after
+  {
+    content: "☛";
+    margin-left: 1rem;
+  }
 }
